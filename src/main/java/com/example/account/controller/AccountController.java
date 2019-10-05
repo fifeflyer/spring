@@ -1,6 +1,6 @@
 package com.example.account.controller;
 
-import com.example.account.AccountApplication;
+import com.example.account.application.AccountApplication;
 import com.example.account.exception.AccountNotFoundException;
 import com.example.account.model.AccountModel;
 import org.springframework.beans.factory.annotation.Autowired;
