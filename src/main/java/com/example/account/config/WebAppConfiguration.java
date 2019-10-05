@@ -14,6 +14,7 @@ import javax.servlet.ServletRegistration;
 @EnableWebMvc
 public class WebAppConfiguration implements WebApplicationInitializer {
 
+    private static final String SPRING_PROFILES_ACTIVE = "spring.profiles.active";
 
     @Override
     public void onStartup(ServletContext servletContext) {
@@ -28,6 +29,8 @@ public class WebAppConfiguration implements WebApplicationInitializer {
         ServletRegistration.Dynamic console = servletContext.addServlet("h2-console", new WebServlet());
         console.setLoadOnStartup(2);
         console.addMapping("/console/*");
+
+        servletContext.setInitParameter(SPRING_PROFILES_ACTIVE, System.getenv(SPRING_PROFILES_ACTIVE));
     }
 }
 
