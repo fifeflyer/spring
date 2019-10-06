@@ -1,4 +1,4 @@
-package com.example.account;
+package com.example.account.application;
 
 import com.example.account.entity.Account;
 import com.example.account.facade.AccountFacade;
