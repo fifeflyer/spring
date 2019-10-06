@@ -1,6 +1,10 @@
 # spring-hibernate-jpa
 
-A proof of concept using Spring 4 (MVC), Hibernate 5, JPA (2.2 API) and H2.
+A proof of concept using Spring 4 (MVC), Hibernate 5, JPA (2.2 API) and H2/Oracle.
+
+## H2 Console 
+
+The console can be access at http://localhost:10090/spring-hibernate-jpa/console.
 
 ## Creating an Oracle Docker Image
 
@@ -29,7 +33,7 @@ A proof of concept using Spring 4 (MVC), Hibernate 5, JPA (2.2 API) and H2.
 1. ```docker stop -t 200 oracle-xe```
 1. ```sqlplus sys/Oracle18@localhost:32118/XE as sysdba```
 
-### Creating tne Schema (User)
+### Creating the Schema (User)
 ```
 ALTER SESSION SET "_ORACLE_SCRIPT"=true;
 
