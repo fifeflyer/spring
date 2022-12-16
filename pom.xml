@@ -17,7 +17,7 @@
         <logback.version>1.2.3</logback.version>
         <lombok.version>1.18.10</lombok.version>
         <spring-data-jpa.version>1.11.23.RELEASE</spring-data-jpa.version>
-        <spring.version>4.3.25.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
     </properties>
 
     <dependencies>
